@@ -1,5 +1,5 @@
 # Cases-of-CIF-based-segmenter
-==
+
 Cases of real audio segmentation. 
 The gray background is the waveform of the audio, and the region where the waveform tends to the horizontal line represents the silence. 
 The green dotted line is the token boundary predicted by CIF, and the red dotted line represents the segment boundary by the CIF-frame-300ms segmenter.
