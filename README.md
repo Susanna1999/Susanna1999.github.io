@@ -1,2 +1,2 @@
 # Cases-of-CIF-based-segmenter
-![Case1](https://github.com/Susanna1999/Cases-of-CIF-based-segmenter/blob/master/wave/1d3362c2-10d1-4e7a-a34c-17e0ffc50e74_01_10.wav)
+![Case1](https://raw.githubusercontent.com/Susanna1999/Cases-of-CIF-based-segmenter/main/figure/05d810ff-4df3-47e1-a2b2-f47995d0243f_01_29.png)
