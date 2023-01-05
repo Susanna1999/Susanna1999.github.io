@@ -1,8 +1,15 @@
 # Cases-of-CIF-based-segmenter
 
-Cases of real audio segmentation. 
+We propose a Continuous Integrate-and-Fire (CIF)-based speech segmentation method for two-pass streaming E2E ASR. 
+Compared with VAD, the CIF estimator reuses the large encoder of ASR and optimizes jointly with ASR, which has a stronger modeling ability.
+In addition, the CIF participates in the generation of token embedding in Paraformer, so the weight can also reflect the decoder's dependence on acoustic information contained in each frame. 
+Continuous zero appearing in the CIF weight will be segmented. 
+Furthermore, convolutional processing is adopted to detect the middle of the silent segment. 
+
+Here are some cases of real audio segmentation. 
 The gray background is the waveform of the audio, and the region where the waveform tends to the horizontal line represents the silence. 
 The green dotted line is the token boundary predicted by CIF, and the red dotted line represents the segment boundary by the CIF-frame-300ms segmenter.
+The corresponding audio is available under the wave/ folder.
 
 ![Case1](https://raw.githubusercontent.com/Susanna1999/Cases-of-CIF-based-segmenter/main/figure/05d810ff-4df3-47e1-a2b2-f47995d0243f_01_29.png)
 ![Case2](https://raw.githubusercontent.com/Susanna1999/Cases-of-CIF-based-segmenter/main/figure/05d810ff-4df3-47e1-a2b2-f47995d0243f_03_5.png)
