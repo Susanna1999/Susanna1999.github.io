@@ -3,19 +3,14 @@
 <html lang='en'>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  </script>
   <title>A CIF-based Speech Segmentation Method for Streaming E2E ASR</title>
-  <script type="text/javascript" async
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async>
-  </script>
 </head>
 <body>
   <!--<div class="center">-->
-  <!--This page uses a template from the <a href="http://hi.cs.waseda.ac.jp/~iizuka/projects/completion/">project page</a> of Satoshi Iizuka et al, <i>"Globally and Locally Consistent Image Completion"</i>.-->
   <!--</div>-->
   <div class="content">
     <!--<img src="images/hpcnt_logo.png" width="200" border="0" class="center">-->
-    <h1>A CIF-based Speech Segmentation Method for Streaming E2E ASR</h1>
+    <h2>A CIF-based Speech Segmentation Method for Streaming E2E ASR</h2>
     <p id="authors">
       Yuchun Shu &nbsp;&nbsp;&nbsp;&nbsp;
       Haoneng Luo &nbsp;&nbsp;&nbsp;&nbsp;
@@ -30,26 +25,23 @@
     </div>
   </div>
   <div class="content">
-    <h2>Abstract</h2>
+    <h3>Abstract</h3>
     <p>
       We propose a Continuous Integrate-and-Fire (CIF)-based speech segmentation method for two-pass streaming E2E ASR. Compared with VAD, the CIF estimator reuses the large encoder of ASR and optimizes jointly with ASR, which has a stronger modeling ability. In addition, the CIF participates in the generation of token embedding in Paraformer, so the weight can also reflect the decoder's dependence on acoustic information contained in each frame. Continuous zero appearing in the CIF weight will be segmented. Furthermore, convolutional processing is adopted to detect the middle of the silent segment.
     </p>
   </div>
-
   <div class="content">
-    <h2>Cases of real audio segmentation</h2>
+    <h3>Cases of real audio segmentation</h3>
     <p>
       Here are some cases of real audio segmentation. The gray background is the waveform of the audio, and the region where the waveform tends to the horizontal line represents the silence. The green dotted line is the token boundary predicted by CIF, and the red dotted line represents the segment boundary by the CIF-frame-300ms segmenter.
     </p>
-    <audio controls=""><source src="wave/05d810ff-4df3-47e1-a2b2-f47995d0243f_01_29.wav" type="audio/wav"></audio>
-    <audio controls=""><source src="wave/05d810ff-4df3-47e1-a2b2-f47995d0243f_03_20.wav" type="audio/wav"></audio>
-    <audio controls=""><source src="wave/05d810ff-4df3-47e1-a2b2-f47995d0243f_03_5.wav" type="audio/wav"></audio>
-    <audio controls=""><source src="wave/05d810ff-4df3-47e1-a2b2-f47995d0243f_05_28.wav" type="audio/wav"></audio>
-    <audio controls=""><source src="wave/05d810ff-4df3-47e1-a2b2-f47995d0243f_06_18.wav" type="audio/wav"></audio>
-    <audio controls=""><source src="wave/05d810ff-4df3-47e1-a2b2-f47995d0243f_06_45.wav" type="audio/wav"></audio>
-  </div>
-  <div class="center">
-  This page uses a template from the <a href="https://hyperconnect.github.io/MarioNETte/">project page</a> of Ha et al, <i>"MarioNETte: Few-shot Face Reenactment Preserving Identity of Unseen Targets"</i>.
+    <audio controls=""><source src="wave/05d810ff-4df3-47e1-a2b2-f47995d0243f_01_29.wav" type="audio/wav"></audio><br/>
+    <img src="figure/05d810ff-4df3-47e1-a2b2-f47995d0243f_01_29.png", width="1200">
+    <audio controls=""><source src="wave/05d810ff-4df3-47e1-a2b2-f47995d0243f_03_20.wav" type="audio/wav"></audio><br/>
+    <audio controls=""><source src="wave/05d810ff-4df3-47e1-a2b2-f47995d0243f_03_5.wav" type="audio/wav"></audio><br/>
+    <audio controls=""><source src="wave/05d810ff-4df3-47e1-a2b2-f47995d0243f_05_28.wav" type="audio/wav"></audio><br/>
+    <audio controls=""><source src="wave/05d810ff-4df3-47e1-a2b2-f47995d0243f_06_18.wav" type="audio/wav"></audio><br/>
+    <audio controls=""><source src="wave/05d810ff-4df3-47e1-a2b2-f47995d0243f_06_45.wav" type="audio/wav"></audio><br/>
   </div>
 </body>
 </html>
